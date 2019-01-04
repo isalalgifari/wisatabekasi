@@ -1,0 +1,147 @@
+#panel, #flip, #tiket{
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+(css untuk tampilan foto)
+#WJSlider{
+    width: 70%;
+}
+
+(css untuk isi web)
+*{margin: 0;padding: 0;}
+#c {
+    overflow: hidden;
+}
+
+#kiri, #kanan, #bawah{
+    padding-bottom: 40000px;
+    margin-bottom: -40000px;
+    background: #2ed573;
+    color: black;
+}
+
+#kanan {
+    background: #00b894;
+}
+
+#atas {
+    background: #27ae60;
+}
+
+#bawah {
+    background: #55efc4;
+ }
+
+
+ .navbar{
+ 	margin-bottom: 0px;
+    width: 100%;
+ }
+
+(css untuk komentar)
+ #formKomentar{
+    	border: 5px solid #d1d1d1;
+    	width:500px;
+    	padding:10px;
+    }
+
+     input, textarea{
+     	padding: 10px;
+     	border:3px solid #e6e6e6;
+     	border-radius: 5px;
+     	margin-bottom: 15px; 
+     }
+
+     input:focus, textarea:focus{
+     	border:3px solid #5E4F4F;
+     }
+
+     textarea{
+     	width:300px;
+     }
+
+     input[type="submit"]{
+     	cursor: pointer;
+		background: -webkit-linear-gradient(top, #efefef, #ddd);
+		background: -moz-linear-gradient(top, #efefef, #ddd);
+		background: -ms-linear-gradient(top, #efefef, #ddd);
+		background: -o-linear-gradient(top, #efefef, #ddd);
+		background: linear-gradient(top, #efefef, #ddd);
+		color: #333;
+		text-shadow: 0px 1px 1px rgba(255,255,255,1);
+		border: 1px solid #ccc;
+     }
+
+     input[type="submit"]:hover {
+		background: -webkit-linear-gradient(top, #eee, #ccc);
+		background: -moz-linear-gradient(top, #eee, #ccc);
+		background: -ms-linear-gradient(top, #eee, #ccc);
+		background: -o-linear-gradient(top, #eee, #ccc);
+		background: linear-gradient(top, #eee, #ccc);
+		border: 1px solid #bbb;
+	}
+
+
+(css untuk pop up)
+    *{margin: 0; padding: 0}
+@keyframes autopopup {
+    from {opacity: 0;margin-top:-200px;}
+    to {opacity: 1;}
+}
+#close {
+    background-color: rgba(64, 68, 65, 0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    animation:autopopup 3.5s;
+}
+#close:target {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 768px){
+    .container-popup {
+        width:50%;
+    }
+}
+@media (max-width: 767px){
+    .container-popup {
+        width:50%;
+    }
+}
+.container-popup {
+    position: relative;
+    margin: 5% auto;
+    padding: 4px 3px;
+    background-color: #e1fff5;
+    color: #333;
+    border-radius: 8px;
+}
+.container-popup img {
+    width: 100%
+}
+.close {
+    position: absolute;
+    top:3px;
+    right:3px;
+    background-color: #33898B;
+    padding:7px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+}
